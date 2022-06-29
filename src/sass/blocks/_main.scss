@@ -1,0 +1,87 @@
+.header {
+    padding: 27px 60px 0px 60px;
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        list-style-type: none;
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 35px
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: right;
+        a {
+            text-decoration: none;
+            color: #000000;
+            transition: 0.5s all;
+            &:hover {
+            color: $main-color;
+            }
+        }
+    }
+}
+
+.promo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 140px;
+    justify-content: space-between;
+    &__descr {
+        max-width: 500px;
+        display:flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 60px;
+        color: #21243D;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #21243D;
+    }
+    &__img {
+        img {
+            width: 243px;
+            height: 243px;
+        }
+    }
+}
+
+
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 36px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long {
+        width: 36px;
+        height: 3px;
+        background: #151812;
+    }
+}

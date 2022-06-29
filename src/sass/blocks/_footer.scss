@@ -1,0 +1,78 @@
+.footer {
+    padding: 130px 0px 54px 0px;
+    &__wrp {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__social {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+    &__primary {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #21243D;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;   
+    &:before{
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: #3498db;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+    }    
+    &:hover::before{
+      animation: social-hover .7s linear;
+      top: -10%;
+      left: -10%;
+    }   
+    i{
+      line-height: 90px;
+      font-size: 26px;
+      transition: .2s linear;
+    }  
+    &:hover i{
+        transform: scale(1.3);
+        color: $main-color;
+    }
+}
+  
+@keyframes social-hover {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
