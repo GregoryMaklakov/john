@@ -5,18 +5,30 @@
 @import 'blocks/main';
 @import 'blocks/button';
 @import 'blocks/recent';
-@import 'blocks/works';
 @import 'blocks/footer';
+
+@import 'blocks/blog';
+@import 'blocks/works';
+@import 'blocks/article';
 
 * {
     font-family: 'Heebo', sans-serif;
     margin: 0;
     padding: 0;
+    a {
+        &:hover{
+            text-decoration: none;
+        }
+        text-decoration: none;
+    }
 }
 
 .container {
     max-width: 855px;
     margin: 0 auto;
+    &-small {
+        max-width: 650px;
+    }
 }
 
 @import 'blocks/media';

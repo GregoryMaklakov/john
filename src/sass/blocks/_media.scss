@@ -89,6 +89,12 @@
         align-content: center;
         align-items: center;
         gap: 30px;
+        &__descr {
+            align-items: center;
+        }
+        &__title, &__subtitle {
+            text-align: center;
+        }
     }
     .recent {
         &__wrp {

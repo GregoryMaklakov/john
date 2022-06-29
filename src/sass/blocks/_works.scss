@@ -26,8 +26,6 @@
         padding-bottom: 20px;
         border-bottom: 1px solid #E0E0E0;
     }
-    //&__img {
-    //}
     &__descr {
         display: flex;
         flex-direction: column;
@@ -38,6 +36,9 @@
         font-size: 30px;
         line-height: 44px;
         color: #21243D;
+        &:hover {
+            color: $main-color;
+        }
     }
     &__block {
         display: flex;
